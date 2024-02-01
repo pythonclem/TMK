@@ -1,4 +1,6 @@
 import mysql.connector
+from TMKFunctions.py import DBconnect
+
 mydb = mysql.connector.connect(
   host="localhost",
   user="admin",
