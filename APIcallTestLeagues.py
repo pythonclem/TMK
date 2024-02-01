@@ -1,7 +1,7 @@
 import requests
 import json
 
-countries = ['Spain']
+countries = ['Spain', 'France']
 leagues = []
 for country in countries:
     response = requests.get(f"https://www.thesportsdb.com/api/v1/json/3/search_all_leagues.php?c={country}")
@@ -11,8 +11,8 @@ for country in countries:
         leaguename = response.json()['countries'][x]['strLeague']
         leaguecountry = response.json()['countries'][x]['strCountry']
         leaguesport = response.json()['countries'][x]['strSport']
-        leaguetuple = (leaguename, leaguecountry, leaguesport)
-        leagues.append(leaguetuple)
+        leaguedata = (leaguename, leaguecountry, leaguesport)
+        leagues.append(leaguedata)
 
 print(leagues)
 

@@ -1,18 +1,7 @@
 import mysql.connector
-from TMKFunctions.py import DBconnect
+from tmkFunctions import DBconnect, DBquery
 
-mydb = mysql.connector.connect(
-  host="localhost",
-  user="admin",
-  password="160790",
-  database = "TMK"
-)
-
-mycursor = mydb.cursor()
-
-mycursor.execute("SELECT DISTINCT country FROM teams")
-
-myresult = mycursor.fetchall()
-
-for x in myresult:
-  print(x)
+mydb = DBconnect()
+        
+if mydb:
+    DBquery("SELECT DISTINCT leagueid FROM teams")

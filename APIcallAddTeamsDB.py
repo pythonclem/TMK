@@ -1,13 +1,9 @@
 import requests
 import mysql.connector
 import json
+from tmkFunctions import DBconnect
 
-mydb = mysql.connector.connect(
-  host="localhost",
-  user="admin",
-  password="160790",
-  database = "TMK"
-)
+mydb = DBconnect()
 mycursor = mydb.cursor()
 
 leagues = ['MLB']
