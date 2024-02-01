@@ -27,6 +27,9 @@ for league in leagues:
         leagueid = currentTeam['idLeague']
         teamsport = currentTeam['strSport']
 
-
+        sql = "INSERT INTO teams (id, name, altname, league, country, badge, leagueid, sport) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)"
+        val = (teamid, name, altname, teamleague, teamcountry, teambadge, leagueid, teamsport)
+        mycursor.execute(sql, val)
+        mydb.commit()
 
         print(f"{name} successfully in DB")
