@@ -1,0 +1,10 @@
+DONE:
+Multiple Leagues: Each team can have more than one league
+AddLeague: Write code that receives a list of leagueids and adds the league and teams to DB
+AddMatches: Write code that recieves a leagueid and season(s) and 
+
+TO DO:
+Times: Updating dates and times of matches (known only 2 weeks before)
+Scores: Updating scores of matches (known after the match)
+Promotion / Relegation: Updating teams leagues' and adding new teams as necessary
+Game times: Ask user for timezone, deliver the data in his time
