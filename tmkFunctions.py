@@ -8,7 +8,9 @@ def DBconnect():
             host="localhost",
             user="admin",
             password="160790",
-            database="TMK"
+            database="TMK",
+            charset="utf8mb4",
+            collation="utf8mb4_unicode_ci"
         )
     return mydb
 
