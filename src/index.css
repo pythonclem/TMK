@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: #499bc7;
+  max-width: 500px;
+  border: 1px dashed darkgrey;
+  padding: 1rem;
+  gap: 1rem;
+
+  min-height: 100vh;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__heading {
+  font-weight: 900;
+  font-style: italic;
+  color: #ff911f;
+  text-shadow: -1.5px 1.5px #eb3d26;
+}
+
+.hero__subheading {
+  font-size: 16px; /* Updated font size */
+  color: #fff;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.5rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container__label {
+  font-size: 14px;
+  color: #333;
+}
+
+input {
+  border: none;
+  margin: 0;
+  padding: 10px; /* Removed duplicated padding */
+  outline: none;
+  background: none;
+  width: 100%;
+}
+
+.input-container__input {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.input-container__input:focus {
+  outline: none;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit {
+  margin-top: auto;
+  padding: 10px 15px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #ff911f;
+  color: #fff;
+}
+
+.btn-remove {
+  color: #333;
+}
+
+.btn-submit:hover {
+  background-color: #eb3d26;
+}
+
+.btn-remove:hover {
+  color: inherit;
+}
+
+/* FIXME: fix scroll behavior and height */
+.teams-list {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.teams-list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.teams-list__item:nth-child(even),
+.search-list__item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.teams-list__name,
+.search-list__name {
+  flex: 1;
+}
+
+/* FIXME: display absolute under inputfield without gap */
+.search-list {
+  background-color: #fff;
+}
+
+.search-list__item {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Customize the scrollbar */
+.teams-list::-webkit-scrollbar {
+  width: 5px; /* Adjust the width of the scrollbar */
+}
+
+/* Handle */
+.teams-list::-webkit-scrollbar-thumb {
+  background: #ff911f; /* Set the background color of the scrollbar handle */
+  border-radius: 4px; /* Round the corners of the scrollbar handle */
+}
+
+/* Track */
+.teams-list::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Set the background color of the scrollbar track */
+}
