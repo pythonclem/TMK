@@ -1,0 +1,29 @@
+{
+  "userName": "John Doe",
+  "userEmail": "john@example.com",
+  "selectedTeams": [
+    "w5er4gt6er8g",
+    "weg5rwe4w6",
+    "4rwe7gwerwf",
+    "w5rt47w5e8w",
+    "er5g774gR555T7d"
+  ]
+}
+
+[
+  // { id: 'wkdfogih34553', name: 'Manchester United', sport: 'football' },
+  // { id: 'ldfgo34590asd', name: 'Real Madrid', sport: 'soccer' },
+  // { id: 'dfg345sdg98gs', name: 'Los Angeles Lakers', sport: 'basketball' },
+  // { id: 'qwei2345tjgns', name: 'New York Yankees', sport: 'baseball' },
+  // { id: 'jhf2r5346hfdg', name: 'New Zealand All Blacks', sport: 'rugby' },
+  // { id: 'g5f34tq2rgf5r', name: 'Serena Williams', sport: 'tennis' },
+  // { id: 'k3g89wrm4ghwe', name: 'FC Barcelona', sport: 'football' },
+  // { id: 'sg45rgsdfgdsf', name: 'Bayern Munich', sport: 'soccer' },
+  // { id: 'a3sdf54a6sd45', name: 'Golden State Warriors', sport: 'basketball' },
+  // { id: 'dsg9rg45hrtyg', name: 'Chicago Cubs', sport: 'baseball' },
+  // { id: 'sdf5gh34rtjhwe', name: 'Australia Wallabies', sport: 'rugby' },
+  // { id: 'kj3f4hg2r5hrg', name: 'Rafael Nadal', sport: 'tennis' },
+  // { id: 'sd4g56h34rytse', name: 'Liverpool FC', sport: 'football' },
+  // { id: 'fg45hsg89a3sga', name: 'Paris Saint-Germain', sport: 'soccer' },
+  // { id: 'sgd35hdfg6sdgf', name: 'Los Angeles Clippers', sport: 'basketball' },
+]
